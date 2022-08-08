@@ -1,0 +1,673 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*start header*/
+
+
+header .contaner .box {
+    display: grid;
+    grid-template-rows: repeat(2 ,1fr);
+    grid-template-columns: repeat(8 ,1fr);
+    
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.contaner .box .logo h1{
+    color: white;
+    position:relative;
+top: 15px;
+padding: 0 10px;
+height: 10px;
+}
+.contaner .box .nav{
+    position: relative;
+    left: 200px;
+    
+}
+.contaner .box .nav ul{
+    display: grid;
+    grid-template-columns: repeat(8 ,70px);
+position: relative;
+bottom: -15px;
+}
+.contaner .box .nav  li ,a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    padding: 10px 5px;
+
+
+}
+.contaner .box .nav  li a::after{
+    content:"";
+    width: 0;
+    height: 3px;
+    background-color: #6195ff;
+    position: relative;
+    z-index: 1;
+    display: block;
+    transition: width 1s;
+
+}
+.contaner .box .nav a:hover::after{
+width: 100%;
+
+}
+.contaner .box .drob{
+background-color: #6195ff;
+width: 120px;
+left: -50%;
+position: absolute;
+top: 90%;
+visibility: hidden;
+transition:  1s;
+}
+.contaner .box .dd:hover .drob{
+
+    visibility: visible;
+}
+/*end header*/
+section{
+    
+    background-image: url("../Amazing.300.Mixed\ Wallpapers.Pack.128.HD.akoam\ \(3\).jpg");
+    background-size: cover;
+}
+section .contaner
+{
+    background-color: rgba(8, 8, 8, 0.7);
+    height: 100vh;
+
+}
+section .contaner .box{
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+   
+}
+section .contaner .box p{
+    margin: 15px;
+font-size: small;
+}
+section .contaner .box input, button{
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 1s;
+}
+section .contaner .box button{
+    color: white;
+    background-color: #6195ff;
+
+}
+section .contaner .box input, button:focus{
+outline: none;
+}
+section .contaner .box button:hover{
+    opacity: 0.8;
+}
+section .contaner .box input:hover{
+    opacity: 0.8;
+    
+}
+/*end section*/
+/*start web site*/
+@media (max-width:480px){
+ .website .contaner{
+     display: grid;
+     grid-template-columns: repeat(2 ,1fr);
+     grid-template-rows: repeat(2 ,1fr);
+        background-color:#6195ff ;
+    }
+}
+
+ .hh{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+ .hh::after{
+    content: "";
+    width: 5%;
+    height: 5px;
+    background-color: #6195ff;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    position: relative;
+    margin: 10px;
+}
+.website .contaner  {
+display: flex;
+justify-content: center;
+text-align: center;
+right: -75px;
+width: 80%;
+padding-bottom: 50px;
+}
+.website .contaner .box{
+    
+    position: relative;
+    right: -100px;
+    margin: 10px;
+    background-color: white;
+box-shadow: 0 0 2px 1px  #ececec;
+z-index: 40;
+}
+.website .contaner .box h3{
+position: relative;
+z-index: 70;
+padding: 20px 5px;
+}
+.website .contaner .box:hover h3{
+    color:#6195ff;
+    
+}
+.website .contaner .box p{
+    position: relative;
+    z-index: 70;
+line-height: 1.5;
+color: #777;
+
+}
+
+.website .contaner .box button{
+    padding: 15px ;
+    color: #6195ff;
+    background: transparent;
+    position: relative;
+    z-index: 70;
+}
+.website .contaner .box::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color:rgba(0 0 0 /86%);
+position: relative;
+top: 0;
+transition: 0.5s;
+transform: translate(0%, -100%);
+
+}
+.website .contaner .box:hover::after{
+    width: 100%;
+}
+/*end website*/
+
+/*start protfolio*/
+.protfolio{
+   
+    background-color: rgba(119, 119, 119, 0.411);
+
+}
+.protfolio .contaner .box img{
+    width: 250px;
+}
+.protfolio .contaner{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+.protfolio .contaner .box{
+    flex-basis: 30%;
+}
+.protfolio .contaner .box h5 {
+
+    text-align: center;
+    position: relative;
+    top: -100px;
+    font-size: large;
+    visibility: hidden;
+    transition:  0.5s;
+    left: -60px;
+}
+.protfolio .contaner .box p {
+
+     text-align: center;
+     position: relative;
+     top: -100px;
+     font-size: large;
+     visibility: hidden;
+     transition: 1.5s;
+     left: -70px;
+}
+.protfolio .contaner .box:hover p{
+    visibility: visible;
+    color: white;
+    z-index: 1;
+
+} 
+
+.protfolio .contaner .box:hover  h5{
+visibility: visible;
+color: white;
+z-index: 1;
+}
+.protfolio .contaner .box::after{
+    content: "";
+    width: 0;
+    height: 83%;
+    background-color: #000000c9;
+    display: block;
+    top: -235px;
+    position: relative;
+    transition: 0.7s;
+    
+}
+.protfolio .contaner .box:hover::after{
+    width: 250px;
+}
+/*end protfolio*/
+/*start services*/
+.services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    width: 100%;
+
+    background-color:rgba(119, 119, 119, 0.144);
+}
+.services .contaner{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+width: 80%;
+margin-left: 80px;
+}
+
+.services .contaner .images img{
+    width: 500px;
+
+    
+}
+
+.services .contaner .images::after{
+content: "";
+display: block;
+width: 0;
+height: 5px;
+background-color: #6195ff;
+position: relative;
+top: -4px;
+transition: 1s;
+}
+.services .contaner .images:hover::after{
+    width: 500px;
+    }
+.services .contaner .qq::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background-color:#6195ff;
+    position: relative;
+    top: -347px;
+    transition: 1s;
+}
+.services .contaner .qq:hover::after{
+width: 500px;
+}
+.services .contaner .images::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height:0;
+    background-color:#6195ff;
+    position: absolute;
+    transition: 1s;
+
+}
+.services .contaner .images:hover::before{
+height: 338px;
+    }
+
+.services .contaner .ww::before{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 0;
+    background-color:#6195ff;
+    position: absolute;
+    right: 175px;
+    transition: 1s;
+    
+
+}
+.services .contaner .ww:hover::before{
+    height: 338px;
+    }
+
+.services .contaner .box h2{
+padding: 20px 10px;
+
+}
+.services .contaner .box h2::after{
+content: "";
+display: block;
+width: 40px;
+height: 3px;
+background-color: #6195ff;
+position: relative;
+top: 5px;
+}
+.services .contaner .box h2:hover::after{
+    width: 125px;
+    
+}
+.services .contaner .box .one{
+padding-bottom: 10px;
+color: #777
+}
+.services .contaner .box p{
+    line-height: 1.5;
+    color: #777;
+}
+/*start price*/
+.price{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url("../Landscape\ \(49\).jpg");
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.price .contaner::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.555);
+    display: block;
+    width: 100%;
+    height: 240px;
+    position: absolute;
+  margin-top: -140px;
+  right: 3px;
+}
+.price .contaner{
+    width: 70%;
+
+}
+
+.price .contaner .box{
+display: grid;
+grid-template-columns: repeat(4 ,1fr);
+text-align: center;
+position: relative;
+right: -130px;
+
+
+}
+.price .contaner .box .ss{
+    z-index: 1;
+    color:white;
+    
+}
+.brice{
+    width: 60%;
+    padding-top: 70px;
+padding-bottom: 70px;
+}
+
+.brice .contaner {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    justify-items: center;
+position:relative;
+left: 200px;
+}
+.brice .contaner .box{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 2px 1px rgba(119, 119, 119, 0.315);
+    width: 200px;
+    height: 340px;
+    margin: 10px;
+}
+.brice .contaner .box::before{
+content: "";
+display: block;
+background-color: rgb(0, 0, 0);
+width:200px;
+height:0;
+position: absolute;
+top: 10px;
+transition: 1s;
+
+}
+.brice .contaner .box:hover::before{
+height: 340px;
+
+}
+.brice .contaner .box h3{
+padding: 10px 1px;
+color: #777;
+z-index: 1;
+position:relative;
+} 
+.brice .contaner .box h3:hover{
+    color: #6195ff;
+    
+}
+.brice .contaner .box .nn{
+    width: 70%;
+    padding: 40px;
+    border: #6195ff solid 3px;
+    border-radius: 50%;
+    display: block;
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 1;
+    left: 30px;
+}
+.brice .contaner .box .nn:hover{
+color: white;
+}
+
+.brice .contaner .box P{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #777;
+    position: relative;
+    z-index: 2;
+
+}
+.brice .contaner .box .mm button{
+
+    padding:10px  30px;
+    position: relative;
+    background-color: transparent;
+    border: #6195ff solid 1px;
+z-index: 1;
+color: #6195ff;
+}
+/*end brice*/
+
+/*start team*/
+.team{
+background-image: url("../Landscape\ \(52\).jpg");
+background-size: cover;
+padding-top: 50px;
+margin-bottom: 100px;
+}
+.team::after{
+    content: "";
+    display: block;
+width: 100%;
+height: 275px;
+background-color: rgba(0, 0, 0, 0.767);
+position: absolute;
+margin-top: -275px;
+margin-right: -50px;
+}
+.team .contaner{
+display: grid;
+grid-template-columns: repeat(2 ,1fr);
+width: 60%;
+
+}
+ .team .contaner .box{ 
+text-align: start;
+
+position:relative;
+left: 185px;
+padding:10px;
+ }
+ .team .box .bb{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    
+ }
+ .team .bb h2{
+     color: white;
+     z-index: 1;
+     position: relative;
+ }
+
+ .team button{
+    position: relative; 
+    background: transparent;
+    color: #6195ff;
+    left: 93px;
+    top: -20px;
+    z-index: 1; 
+ }
+ .team .contaner .box .bb img{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: relative;
+z-index: 1;
+
+ }
+ .team .contaner .box p{
+     position: relative;
+     z-index: 1;
+     color: white;
+ }
+ /*end team*/
+ /*start contact*/
+ .contact .contaner .box{
+    display: grid;
+    grid-template-columns: repeat(3 ,250px);
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 120px;
+ }
+ .contact .contaner .box .zz p{
+color: #777;
+ }
+ .contact .contaner .inbut{
+     display: grid;
+     grid-template-rows: repeat(2 ,1fr);
+     grid-template-columns: repeat(2 ,1fr);
+     width: 60%;
+     padding: 50px;
+     position: relative;
+     left: 170px;
+     border: none;
+    }
+    .contact .tybe:hover{
+        border: #6195ff 1px solid;
+        border-bottom: #6195ff solid 2px;
+    }
+.contact .tybe{
+border: none;
+background-color: rgba(119, 119, 119, 0.247);
+padding: 10px;
+margin: 5px;
+    }
+    .contact .contaner .inbut .vv{
+display: grid;
+grid-template-columns: repeat(2 ,300px);
+border: none;
+ }
+ .contact .type{
+    width: 580px;
+    position: relative;
+    left: 0px;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(119, 119, 119, 0.247);;
+    border: none;
+
+ }
+ .contact .type:hover{
+     border: #6195ff solid 1px;
+     border-bottom: #6195ff solid 2px;
+     
+ }
+ .contact .tybe,.type:focus{
+     outline: none;
+ }
+ .contact .contaner button{
+    position: relative;
+    left: 230px;
+    background-color: #6195ff;
+    width: 150px;
+    color: white;
+}
+ .contact textarea{
+     resize: none;
+ }
+ .oo{
+     padding-top: 100px;
+     padding-bottom: 100px;
+     background-color: black;
+    }
+    
+    .grb span{
+        position:relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50% ,-50%);
+        color: white;
+        font-size: 20px;
+        text-transform: uppercase;
+        z-index: 1;
+mix-blend-mode: difference;
+    }
+    .grb span::after{
+        content: "";
+        background-color: rgb(255, 255, 255);
+    width: 20px;
+    height: 20px;
+    position: relative;
+    
+    display: block;
+    left: 0;
+    top: -22px;
+   animation: gg 3s linear infinite;
+    
+    }
+@keyframes gg{
+0%{
+left: 0;
+
+}
+50%{
+left: 7%;
+
+}
+100% {
+        left: 0;
+    }
+}
+
+.navv{
+    background-color: #6195ff;
+z-index: 8000;
+position: relative;
+
+}
+.p{color: #6196ff93;}
